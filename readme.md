@@ -60,6 +60,9 @@ no projeto esse driver já foi aplicado e está na pasta lib, mas caso tenha com
 
 - Clique em OK para adicionar.
 
+## UML 
+<img src="sistemaAutenticacaoUML.drawio.png" width="600">
+
 ## 🏠 Facade (fachada)
 
 O facade serve para que o usuário não tenha que interagir com todas as classes, escondendo funcionalidades e classes mais complexas por meio de uma "fachada" e deixando exposto apenas o que o usuário necessita usar e ver.
