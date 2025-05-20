@@ -148,7 +148,7 @@ public class PainelProxy implements Painel{
        <a href="https://www.linkedin.com/in/leonardo-duarte-pereira-a4705b255/" target="_blank">Leonardo Duarte</a>
        </div>
        <div style="display:flex; flex-direction:column;">
-      <img src="https://github.com/leoduarte14.png?size=115" width=115>
+      <img src="https://github.com/Yannxz14.png?size=115" width=115>
        <a href="https://www.linkedin.com/in/yanferrezin/" target="_blank">Yan Souza</a>
        </div>
        <div style="display:flex; flex-direction:column;">

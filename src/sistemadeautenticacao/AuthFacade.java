@@ -37,9 +37,9 @@ public class AuthFacade {
        try( Connection conn = Conexao.conectar();  PreparedStatement stmt = conn.prepareStatement(sql)){
            stmt.setString(1, email);
            stmt.setString(2, senha);
-           
+           // o executeQuery executa o sql do tipo select, o ResulSet trás um conjunto de resultados
            ResultSet rs = stmt.executeQuery();
-           
+           //o metodo next faz ele avançar o cursor para proxima linha do resultado
            if(rs.next()){
                String nome = rs.getString("nome");
                return new Usuario(nome, email);
