@@ -25,6 +25,7 @@ public class PainelProxy implements Painel{
     
     @Override 
     public void acessar(){
+        // tenta logar o usuário por via de seu usuário e senha
         try {
             Usuario usuario = auth.login(email, senha);
             if(usuario != null){
@@ -34,6 +35,7 @@ public class PainelProxy implements Painel{
                 System.out.println("Acesso negado, Usuário não autenticado");
             }
         } catch (SQLException e) {
+            // exceção caso tenha erros
             System.out.println("Erro na autenticação" + e.getMessage());
         }
     }

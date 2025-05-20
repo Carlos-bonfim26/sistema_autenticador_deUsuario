@@ -1,6 +1,6 @@
 
 package sistemadeautenticacao;
-
+// import dos comandos sql
 import java.sql.*;
 
 /**
@@ -10,11 +10,14 @@ import java.sql.*;
 public class AuthFacade {
 
  public boolean cadastrar(String nome, String email, String senha) {
+    // comandos sql para inserção na tabela usuários
     String sql = "INSERT INTO usuarios (nome, email, senha) VALUES (?, ?, ?)";
 
+    // tentando a conexão para ver se ela tem sucesso e 
     try (Connection conn = Conexao.conectar(); 
+    // o PreparedStatement é um método da connection que está recebendo os comandos e sql e que por meio do setString depois aplicará o valor dos parámetros na iserção 
          PreparedStatement stmt = conn.prepareStatement(sql)) {
-
+        // colocando o valor dos parâmetros na iserção para cadastrar o usuário
         stmt.setString(1, nome);
         stmt.setString(2, email);
         stmt.setString(3, senha);

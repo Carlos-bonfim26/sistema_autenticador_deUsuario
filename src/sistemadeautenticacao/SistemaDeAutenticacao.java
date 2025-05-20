@@ -12,15 +12,16 @@ public class SistemaDeAutenticacao {
 
  
     public static void main(String[] args) {
-        
+        // criação do autenticador
       AuthFacade auth = new AuthFacade();
-      
-      // auth.cadastrar("Carlos", "Carlosbonfim772@gmail.com", "cb722");
-      
+      // exemplo de usuário que já está criado
       //auth.cadastrar("João Pedro", "Joaopedro@email.com", "joao123");
+
+      // painel do usuário
       Painel painel = new PainelProxy("Carlosbonfim772@gmail.com", "cb722", auth);
       Painel painel2 = new PainelProxy("Joaopedro@email.com", "joao123", auth);
       
+      // tentativa de acesso
       painel.acessar();
       painel2.acessar();
     }
