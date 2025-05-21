@@ -10,7 +10,7 @@
 
 ## 🤔 O que faz?
 
-O sistema de autenticação criado pode cadastrar usuários no banco de dados e poder dar acesso ou não a esses usuários quando tentarem acessar, dependendo se já está cadastrado e se usou de digitou sua senha de forma correta no momento do login.
+O sistema de autenticação criado pode cadastrar usuários no banco de dados e poder dar acesso ou não a esses usuários quando tentarem acessar, dependendo se já está cadastrado e se digitou sua senha de forma correta no momento do login.
 
 ## 🎯 Motivo por eu ter feito
 
@@ -24,7 +24,7 @@ clone o repositório digitando isso no terminal(recomendo estar dentro de alguma
 git clone https://github.com/seu-usuario/sistema_autenticador_deUsuario.git
 ```
 
-baixe o mysql, se não tiver e dentro do seu terminal mysql ou em algum ambiente de desenvolvimento como por exemplo o Workbench rode esses comandos:
+baixe o mysql, se não tiver, dentro do seu terminal mysql ou em algum ambiente de desenvolvimento como por exemplo o Workbench rode esses comandos:
 
 ```bash
 create database sistema_usuarios;
